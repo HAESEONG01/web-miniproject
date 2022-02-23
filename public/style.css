@@ -1,0 +1,102 @@
+/* reset */
+body {
+  margin: 15px 0 0 0;
+}
+
+/* General */
+.Header {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header__top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: gray;
+}
+
+.Header__top__menus li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.Header__top__menus {
+  display: flex;
+}
+
+.Header__top__login__menu {
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.Header__top__login__menu li {
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.Header__top__login__menu i {
+  font-size: 1rem;
+  color: black;
+}
+
+.Header__top__login__menu button {
+  margin-right: 20px;
+  font-size: 0.7rem;
+  color: gray;
+  background: none;
+  border-color: gray;
+}
+
+.Header__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+}
+
+.Header__bottom__search {
+  text-align: center;
+}
+
+.Header__bottom__search__menu {
+  color: gray;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.Header__bottom__search__menu li {
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.Header__bottom__search__btn {
+  border: 2px solid cadetblue;
+  border-radius: 30px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header__bottom__search__btn form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.Header__bottom__search__btn input {
+  border: none;
+}
+
+.Header__bottom__search__btn input::placeholder {
+  color: cadetblue;
+}
+
+.Header__bottom__search__btn button {
+  border: none;
+  background: none;
+  color: cadetblue;
+}
