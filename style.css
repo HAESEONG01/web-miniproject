@@ -1,0 +1,245 @@
+/* reset */
+body {
+    margin: 15px 0 0 0;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  
+  /* General */
+  .Header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Header__top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: gray;
+  }
+  
+  .Header__top__menus li {
+    list-style-type: none;
+    margin-left: 20px;
+  }
+  
+  .Header__top__menus {
+    display: flex;
+  }
+  
+  .Header__top__login__menu {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+  }
+  
+  .Header__top__login__menu li {
+    list-style-type: none;
+    margin-right: 10px;
+  }
+  
+  .Header__top__login__menu i {
+    font-size: 1rem;
+    color: black;
+  }
+  
+  .Header__top__login__menu button {
+    margin-right: 20px;
+    font-size: 0.7rem;
+    color: gray;
+    background: none;
+    border-color: gray;
+  }
+  
+  .Header__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+  }
+  
+  .Header__bottom__search {
+    text-align: center;
+  }
+  
+  .Header__bottom__search__menu {
+    color: gray;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  
+  .Header__bottom__search__menu li {
+    list-style-type: none;
+    margin-right: 10px;
+  }
+  
+  .Header__bottom__search__btn {
+    border: 2px solid cadetblue;
+    border-radius: 30px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Header__bottom__search__btn form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+  
+  .Header__bottom__search__btn input {
+    border: none;
+  }
+  
+  .Header__bottom__search__btn input::placeholder {
+    color: cadetblue;
+  }
+  
+  .Header__bottom__search__btn button {
+    border: none;
+    background: none;
+    color: cadetblue;
+  }
+  
+  /* Bestseller */
+  
+  .Bestseller {
+    border: 1px slateblue dashed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+  
+  }
+  
+  .Bestseller__header {
+    border: 2px darkblue dashed;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0 5px;
+    padding: 10px 0;
+  }
+  
+  .Bestseller__header__main {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Bestseller__header__sub {
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .Bestseller__header__sub li {
+    margin: 10px;
+    font-size: 1rem;
+  }
+  
+  .Bestseller__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    border: 1px solid #ADB5BD;
+  }
+  
+  .Bestseller__body__content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Bestseller__body__content li {
+      border: #ADB5BD 1px solid;
+      width: 150px;
+      height: 220px;
+      margin:20px;
+      align-items: center;
+  }
+  
+  .cover, .category, .title {
+      text-align: center;
+      margin: 2px;
+  }
+  
+  .category {
+      font-size: 12px;
+      font-weight: 300;
+  }
+  
+  .title{
+      font-weight: 600;
+  }
+
+  
+  .Footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background: rgb(131, 56, 28);
+  }
+
+  .Footer__area {
+      width: 950px;
+      margin: 0 auto;
+      padding: 0 30px 30px;
+      color: 666;
+      zoom: 1;
+    }
+    
+    .Footer__menu {
+        float:left;
+        height:44px;
+        width:800px;
+        background-color:#8b8b8b;
+        line-height:15px;
+    }
+
+    .Footer__menu li {
+        float:left;
+        padding:16px 13px 0 14px;
+        height:28px;
+        text-align:center;
+        background:url('http://image.kyobobook.co.kr/ink/images/common/line_footer.gif') no-repeat left center;
+    }
+
+    .Footer__menu li:first-child{
+        background-image:none;
+        padding-left:14px;
+    }
+    .Footer__menu a{
+        text-decoration:none;
+        color:#521313;
+    }
+
+    .Footer__menu a:hover{
+        text-decoration:underline;
+        color:#fff;
+    }
+    
+    .Data__area{
+        float:left;width:460px;
+        margin:18px 0 0 0;
+    }
+
+    .Data__area
+
+    .Logo__area{
+        display: flex;
+        clear:both;
+        padding-top:21px;
+    }
+
+    
+    
+    
+    
+    .Promotion__area {
+      display: flex;
+    }

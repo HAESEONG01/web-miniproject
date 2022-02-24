@@ -176,3 +176,184 @@ ul {
 .title{
     font-weight: 600;
 }
+
+.Footer{
+
+  margin-top:70px;
+  background:#f5f5f5 url('http://image.kyobobook.co.kr/ink/images/common/bg_footer3.gif') 0 0 repeat-x;
+  *position:relative;
+  height: auto;
+}
+
+.Footer__area::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.Footer__area {
+  margin:0 0;
+  padding:0 30px 30px;
+  background:url('http://image.kyobobook.co.kr/ink/images/common/bg_footer3.gif') 0 0 repeat-x;
+  color:#666;
+  *zoom:1;
+}
+
+.Footer__area .Footer__menu {
+    float:left;
+    height:44px;
+    background-color:#8b8b8b;
+    line-height:15px;
+}
+
+.Footer__area .Footer__menu li {
+    float:left;
+    padding:16px 13px 0 14px;
+    height:28px;
+    text-align:center;
+    background:url('http://image.kyobobook.co.kr/ink/images/common/line_footer.gif') no-repeat left center;
+}
+
+.Footer__area .Footer__menu li:first-child{
+    background-image:none;
+    padding-left:14px;
+}
+.Footer__area .Footer__menu a{
+    text-decoration:none;
+    color:#f1f0f0;
+}
+
+.Footer__area .Footer__menu a:hover{
+    text-decoration:underline;
+    color:#fff;
+}
+
+.Footer__area .Footer__menu strong{
+    color:#fff;
+    text-decoration:underline;
+}
+  
+.Footer__area .Data__area{
+    float:left;width:460px;
+    margin:18px 0 0 0;
+}
+
+
+.Footer__area .Logo__area{
+    display: flex;
+    clear:both;
+    padding-top:21px;
+}
+
+.Footer__area .Shortcut__list{
+    float:right;
+    width: 133px;;
+    height:20px;
+    position: relative;
+    right: 0;
+    top: 20px;
+    text-align: left;
+}
+
+.Footer__area .Shortcut__list .btn_open {
+    padding-top:15px;
+    padding-bottom:13px;
+    border:1px solid #707070;
+    background:#6d6d6d url('http://image.kyobobook.co.kr/ink/images/common/arr_shortcut2.png') no-repeat right 0;
+    color:#fff;
+    font-weight:bold;
+    padding-right:27px;
+    text-align:center;
+    text-transform:uppercase;
+
+    
+
+}
+.Shortcut__list ul li.on a,
+.Shortcut__list ul li a:hover,
+.Shortcut__list ul li a:active,
+.Shortcut__list ul li a:focus {
+background-color:#dedede;
+color:#212121;
+}
+
+.shortcut_top ul {
+  top:0;
+  bottom:auto;
+}
+.shortcut_top .btn_open {
+  background-position:right -20px;
+}
+.shortcut_top ul {
+  top:19px;bottom:auto;
+}
+.shortcut_top.shortcut_open .btn_open {
+  background-position:right 0;
+}
+.shortcut_open .btn_open {
+  background-position:right -20px;
+}
+.shortcut_open ul {
+  display:block;
+}
+.shortcut_auto {
+  display:inline-block;width:auto;*display:inline;*zoom:1;
+}
+.shortcut_auto .btn_open {
+  padding-right:20px;
+}
+
+.Footer__area .Shortcut__list ul {
+    bottom:43px;
+}
+
+.Footer__area .Shortcut_open .btn_open {
+    background-position:right -44px;
+}
+ 
+.Footer__area .Promotion__area {
+    float:right;
+    width:460px;
+    font-size:11px;
+    line-height:18px;
+    margin:18px 0 0 20px;
+}
+
+.Footer__area .Promotion__area p{
+    font-size:11px;
+    line-height:18px;
+    color:#666;
+}
+
+.Footer__area .Promotion__area a:link{
+    text-decoration:underline;
+    color:#666;
+}
+
+.Footer__area .Promotion__area a:hover {
+    text-decoration:underline;
+    color:#3c5fe1;
+}
+
+.Footer__area .Mark__area{
+    float:right;
+    width:460px;
+    margin-top:10px;
+    position:relative;
+}
+
+.Footer__area .Mark__area a{
+    display:inline-block;
+    padding:10px 0 0 52px;
+    height:38px;font-size:11px;
+    line-height:15px;
+    background:url('http://image.kyobobook.co.kr/ink/images/common/mark_isms_02.png') no-repeat 0 0;
+}
+
+.Footer__area .Mark__area p{
+    position:absolute;
+    left:168px;top:10px;
+    font-size:11px;
+    color:#666666;
+    line-height:1.5;
+}
+
