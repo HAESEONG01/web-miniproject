@@ -12,6 +12,7 @@ const clientSecret = process.env.CLIENT_SECRET
 
 // nodejs 서버가 또 다른 client가 되어 Naver 서버에 요청을 보내기 위해 사용.
 const request = require('request');
+const template = require('./public/template.js');
 
 // express의 static 미들웨어 활용.
 app.use(express.static('public'))
@@ -50,12 +51,19 @@ app.get("/search", (req, res) => {
 
     request.get(options, function (error, response, body) {
       if (!error && response.statusCode == 200) {
-        //res.writeHead(200, {'Content-Type': 'text/json;charset=utf-8'});
         const parsedBody = JSON.parse(body);
         console.log(parsedBody['items'][0]);
         //res.redirect(`/main?info=${parsedBody['items'][0]}`);
-        res.redirect('main');
-        //res.end(body);
+        const bookInfo = parsedBody['items'][0];
+        const titl = bookInfo['title'];
+        const img = bookInfo['image'];
+        const author = bookInfo['author'];
+        const pub = bookInfo['publisher'];
+        const price = bookInfo['price'];
+        const desc = bookInfo['description'];
+        const result = template.result(titl, img, author, pub, price, desc);
+        res.send(result);
+        //res.redirect('main.html');
       } else {
         res.status(response.statusCode).end();
         console.log('error = ' + response.statusCode);
