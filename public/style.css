@@ -1,6 +1,7 @@
 /* reset */
 body {
-  margin: 15px 70;
+  margin: 15px auto;
+  width: 120vh;
 }
 
 ul, li {
@@ -22,6 +23,7 @@ a:hover {
 .Header {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .Header__top {
@@ -104,6 +106,7 @@ a:hover {
 
 .Header__bottom__search__btn input {
   border: none;
+  outline: none;
 }
 
 .Header__bottom__search__btn input::placeholder {
@@ -165,20 +168,26 @@ a:hover {
   
   .Bestseller__body__content li {
       border: #ADB5BD 1px solid;
-      width: 205px;
-      height: 320px;
-      margin:10px;
+      width: 205px; 
+      height: 340px;
+      margin:15px;
       align-items: center;
   }
   
   .cover, .category, .title {
-      text-align: center;
-      margin: 3px 0px;
+    text-align: center;
+    margin: 3px 0px;
   }
-  
+
+  .cover img{
+    width: 200px;
+    height: 260px;
+  }
+
   .category {
-      font-size: 12px;
-      font-weight: 300;
+    margin: 3px;
+    font-size: 12px;
+    font-weight: 300;
   }
   
   .title{
