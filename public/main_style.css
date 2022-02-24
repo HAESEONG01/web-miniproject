@@ -1,9 +1,14 @@
 /* reset */
-body {
-  margin: 15px auto;
-  width: 120vh;
+body ,html{
+  position: relative;
+  margin: 15px;
 }
 
+article {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+}
 
 ul, li {
   list-style: none;
