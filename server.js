@@ -52,8 +52,7 @@ app.get("/search", (req, res) => {
     request.get(options, function (error, response, body) {
       if (!error && response.statusCode == 200) {
         const parsedBody = JSON.parse(body);
-        console.log(parsedBody['items'][0]);
-        //res.redirect(`/main?info=${parsedBody['items'][0]}`);
+
         const bookInfo = parsedBody['items'][0];
         const titl = bookInfo['title'];
         const img = bookInfo['image'];
@@ -62,8 +61,8 @@ app.get("/search", (req, res) => {
         const price = bookInfo['price'];
         const desc = bookInfo['description'];
         const result = template.result(titl, img, author, pub, price, desc);
+        
         res.send(result);
-        //res.redirect('main.html');
       } else {
         res.status(response.statusCode).end();
         console.log('error = ' + response.statusCode);
