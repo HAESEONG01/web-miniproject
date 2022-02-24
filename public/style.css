@@ -169,7 +169,7 @@ a:hover {
   .Bestseller__body__content li {
       border: #ADB5BD 1px solid;
       width: 205px; 
-      height: 340px;
+      height: 380px;
       margin:15px;
       align-items: center;
   }
@@ -181,7 +181,8 @@ a:hover {
 
   .cover img{
     width: 200px;
-    height: 260px;
+    height: 300px;
+    margin-bottom: 5px;
   }
 
   .category {

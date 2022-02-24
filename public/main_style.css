@@ -1,7 +1,9 @@
 /* reset */
 body {
-  margin: 15px 70;
+  margin: 15px auto;
+  width: 120vh;
 }
+
 
 ul, li {
   list-style: none;
@@ -22,6 +24,7 @@ a:hover {
 .Header {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .Header__top {
