@@ -62,7 +62,7 @@ module.exports = {
                                     <div>
                                         <label for="search"></label>
                                         <input type="text" name="search" id="search" class="Header__bottom__search__main"
-                                            placeholder="문과생이 극찬한 놀라운 수학 공부!"></input>
+                                            placeholder="검색어를 입력하세요."></input>
                                     </div>
                                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                                 </form>
@@ -91,7 +91,7 @@ module.exports = {
                                     <p class="publisher">${pub}</p>
                                     <span class="bar">|</span>
                                     <em>도서</em>
-                                    <p>${price}</p>
+                                    <p>${price} 원</p>
                                 </div>
                                 <div>
                                     <em>책소개</em>
