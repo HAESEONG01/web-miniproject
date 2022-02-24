@@ -43,8 +43,10 @@ module.exports = {
                     </div>
                     <div class="Header__bottom">
                         <div class="Header__bottom__logo">
-                            <img src="http://image.kyobobook.co.kr/ink/images/gnb/logo_kyobo.png" alt="kyobo logo">
-                        </div>
+                            <a href="/">
+                                <img src="http://image.kyobobook.co.kr/ink/images/gnb/logo_kyobo.png" alt="kyobo logo">
+                            </a>
+                            </div>
                         <div class="Header__bottom__search">
                             <div class="Header__bottom__search__menu">
                                 <li>아이가 있는 집</li>
@@ -56,7 +58,7 @@ module.exports = {
                                 <li>똑똑한 하루</li>
                             </div>
                             <div class="Header__bottom__search__btn">
-                                <form action="/main">
+                                <form action="/search">
                                     <div>
                                         <label for="search"></label>
                                         <input type="text" name="search" id="search" class="Header__bottom__search__main"
