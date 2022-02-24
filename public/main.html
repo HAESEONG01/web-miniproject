@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main_style.css">
 
     <!-- Bootstrap 설정 코드 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -69,24 +69,36 @@
                 </div>
             </div>
         </header>
-        <section class="Bestseller">
-            <div class="Bestseller__header">
-                <h2 class="Bestseller__header__main">책 상세 정보</h2>
-            </div>
-            <div class="Bestseller__body">
-                <ul class="Bestseller__body__content">
-                    <li>
-                        <div class="cover">
-                            <img src="https://placeimg.com/200/240/any" alt="book image">
+        <section>
+            <div class="Bookinfo">
+                <h2 class="Bookinfo__header">책 제목</h2>
+                <hr>
+                <div class="Bookinfo__body">
+                    <div class="Bookinfo__body__thumb">
+                        <img src="https://placeimg.com/200/280/nature" alt="book thumb image">
+                    </div>
+                    <div class="Bookinfo__body__inner">
+                        <div>
+                            <em>저자</em>
+                            <p class="author">홍길동</p>
+                            <span class="bar">|</span>
+                            <em>출판사</em>
+                            <p class="publisher">허균</p>
+                            <span class="bar">|</span>
+                            <em>도서</em>
+                            <p>17,820원</p>
                         </div>
-                        <div class="category">[소설]</div>
-                        <div class="title">신춘문예 당선소설집(2022)</div>
-                        <div class="author">저자</div>
-                        <div class="pubdate">출간일</div>
-                        <div class="price">가격</div>
+                        <div>
+                            <em>책소개</em>
+                            <p>고객은 기대 이상의 서비스를 전혀 원하지 않는다
 
-                    </li>
-                </ul>
+                                “고객은 기대 이상의 서비스를 원하지 않는다”라고 말하는 충격적인 책 〈고객이 기업에게 원하는 단 한 가지〉가 출간됐다. 400개 기업 9만 7천 명의 고객을 대상으로 진행한 방대한 현장 데이터를 토대로, 많은 기업이 ‘기대 이상의 서비스를 제공하면 고객은 자사의 상품을 계속 구매할 것’이라고 믿고 있는데 저자는 이것을 ‘환상’이라고 단정한다.
+                                </p>
+                        </div>
+                        <a href="#" class="btn"> 책 구매하기 > </a>
+
+                    </div>
+                </div>
             </div>
         </section>
         <footer>
@@ -104,48 +116,28 @@
                         <li><a data-ga-label="채용정보" href="#" target="_blank">채용정보</a></li>
                     </ul>
 
-                    <div class="Shortcut__list">
-                    <a href="#" class="btn_open">Family Site</a>
-                    <ul data-ga-category="교보문고_공통_PC" data-ga-action="FNB">
-                        <li><a data-ga-label="familysite_교보생명" href="#" target="_blank" title="새 창 열림">교보생명</a></li>
-                        <li><a data-ga-label="familysite_교보증권" href="#" target="_blank" title="새 창 열림">교보증권</a></li>
-                        <li><a data-ga-label="familysite_교보정보통신" href="#" target="_blank" title="새 창 열림">교보정보통신</a></li>
-                        <li><a data-ga-label="familysite_교보리얼코" href="#" target="_blank" title="새 창 열림">교보리얼코</a></li>
-                        <li><a data-ga-label="familysite_교보악사자산운용" href="#" target="_blank" title="새 창 열림">교보악사자산운용</a></li>
-                        <li><a data-ga-label="familysite_교보라이프플래닛생명" href="#" target="_blank" title="새 창 열림">교보라이프플래닛생명</a></li>
-                        <li><a data-ga-label="familysite_KCA 손해사정" href="#" target="_blank" title="새 창 열림">KCA 손해사정</a></li>
-                        <li><a data-ga-label="familysite_KCA 서비스" href="#" target="_blank" title="새 창 열림">KCA 서비스</a></li>
-                        <li><a data-ga-label="familysite_교보자산신탁주식회사" href="#" target="_blank" title="새 창 열림">교보자산신탁주식회사</a></li>
-                        <li><a data-ga-label="familysite_대산문화재단" href="#" target="_blank" title="새 창 열림">대산문화재단</a></li>
-                        <li><a data-ga-label="familysite_교보교육재단" href="#" target="_blank" title="새 창 열림">교보교육재단</a></li>
-                        <li><a data-ga-label="familysite_대산농촌재단" href="#" target="_blank" title="새 창 열림">대산농촌재단</a></li>
-                        <li><a data-ga-label="familysite_핫트랙스" href="#" target="_blank" title="새 창 열림">핫트랙스</a></li>
-                        <li><a data-ga-label="familysite_교보아카데미" href="#" target="_blank" title="새 창 열림">교보아카데미</a></li>
-                    </ul>
+                    <div class="Logo__area">
+                        <img src="http://image.kyobobook.co.kr/ink/images/common/logo_footer.png" alt="KYOBO 교보문고">
                     </div>
 
-                    <div class="Logo__area">
-                    <img src="http://image.kyobobook.co.kr/ink/images/common/logo_footer.png" alt="KYOBO 교보문고">
-                    </div>
-                
 
                     <div class="Data__area">
                         <address>
                             ㈜ #### &nbsp; ### ### ### 1 &nbsp; 대표이사 : ###
                             <br>
-				            사업자등록번호 : 000-00-00000
+                            사업자등록번호 : 000-00-00000
                             <br>
                             <strong class="big">대표전화 : 0000-0000 (발신자 부담전화)</strong>
                             &nbsp;
                             팩스 : 0000-000-0000 (지역번호공통)
                             <br>
-                            ### ######### : 제 000호  ▶
+                            ### ######### : 제 000호 ▶
 
                             <a href="#" target="_blank" title="새 창 열림">사업자정보확인</a>
                             <br>
-                            
+
                             <div class="copy">
-                                COPYRIGHT(C) 
+                                COPYRIGHT(C)
                                 <strong>KYOBO BOOK CENTRE</strong>
                                 ALL RIGHTS RESERVED.
                             </div>
@@ -156,22 +148,26 @@
                     <div class="Promotion__area">
                         <p>
                             LG U+ 구매안전서비스 &nbsp;
-                            ▶<a href="#" onclick="window.open(this.href,'lguplus','scrollbars=yes,width=470,height=550');return false;" title="새 창 열림">서비스 가입 확인</a><br>
+                            ▶<a href="#"
+                                onclick="window.open(this.href,'lguplus','scrollbars=yes,width=470,height=550');return false;"
+                                title="새 창 열림">서비스 가입 확인</a><br>
                             고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 LG유플러스의 구매안전서비스를 이용하실 수 있습니다.
                         </p>
-                      
+
 
                     </div>
 
                     <div class="Mark__area">
-                        <a href="#" onclick="window.open(this.href,'mark_isms','width=600,height=855');return false;" title="새창열림">정보보호관리체계<br> ISMS 인증획득</a>
+                        <a href="#" onclick="window.open(this.href,'mark_isms','width=600,height=855');return false;"
+                            title="새창열림">정보보호관리체계<br> ISMS 인증획득</a>
                         <p>[인증범위] 온라인 교보문고 서비스 운영<br>[유효기간] 2020.11.04. ~ 2023.11.03.
                         </p>
                     </div>
-                        
+
                 </div>
             </div>
         </footer>
+
 
     </article>
 
