@@ -3,6 +3,11 @@ body {
   margin: 15px 0 0 0;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+}
+
 /* General */
 .Header {
   display: flex;
@@ -99,4 +104,75 @@ body {
   border: none;
   background: none;
   color: cadetblue;
+}
+
+/* Bestseller */
+
+.Bestseller {
+  border: 1px slateblue dashed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+
+}
+
+.Bestseller__header {
+  border: 2px darkblue dashed;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 0 5px;
+  padding: 10px 0;
+}
+
+.Bestseller__header__main {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.Bestseller__header__sub {
+  display: flex;
+  margin-left: 20px;
+}
+
+.Bestseller__header__sub li {
+  margin: 10px;
+  font-size: 1rem;
+}
+
+.Bestseller__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  border: 1px solid #ADB5BD;
+}
+
+.Bestseller__body__content {
+  display: flex;
+  align-items: center;
+}
+
+.Bestseller__body__content li {
+    border: #ADB5BD 1px solid;
+    width: 150px;
+    height: 220px;
+    margin:20px;
+    align-items: center;
+}
+
+.cover, .category, .title {
+    text-align: center;
+    margin: 2px;
+}
+
+.category {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.title{
+    font-weight: 600;
 }
