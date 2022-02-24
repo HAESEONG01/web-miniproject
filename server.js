@@ -12,8 +12,8 @@ const clientSecret = process.env.CLIENT_SECRET
 
 // nodejs 서버가 또 다른 client가 되어 Naver 서버에 요청을 보내기 위해 사용.
 const request = require('request');
-const template = require('./public/template.js');
 
+const template = require('./public/template.js');
 // express의 static 미들웨어 활용.
 app.use(express.static('public'))
 
@@ -35,8 +35,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/search", (req, res) => {
-    const title = req.query.search;
-    console.log(title);
+    let title= ' ';
+    title = req.query.search;
 
     const api_url = 'https://openapi.naver.com/v1/search/book.json?query='+ encodeURI(req.query.search);
 
@@ -61,11 +61,11 @@ app.get("/search", (req, res) => {
         const price = bookInfo['price'];
         const desc = bookInfo['description'];
         const result = template.result(titl, img, author, pub, price, desc);
-        
+
         res.send(result);
       } else {
-        res.status(response.statusCode).end();
         console.log('error = ' + response.statusCode);
+        res.redirect('/');
       }
     });
 });
