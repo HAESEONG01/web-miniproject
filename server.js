@@ -12,8 +12,8 @@ const clientSecret = process.env.CLIENT_SECRET
 
 // nodejs 서버가 또 다른 client가 되어 Naver 서버에 요청을 보내기 위해 사용.
 const request = require('request');
-const template = require('./public/template.js');
 
+const template = require('./public/template.js');
 // express의 static 미들웨어 활용.
 app.use(express.static('public'))
 
