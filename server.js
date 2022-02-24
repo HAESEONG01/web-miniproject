@@ -33,48 +33,35 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname, 'index.html');
 });
 
-app.get("/searchpage", (req, res) => {
-    // '안녕'이라는 텍스트를 받아야함.
+app.get("/search", (req, res) => {
+    const title = req.query.search;
+    console.log(title);
 
-    console.log(req.body);
-    console.log(typeof req.body); // object?
+    const api_url = 'https://openapi.naver.com/v1/search/book.json?query='+ encodeURI(req.query.search);
 
-    res.sendFile(__dirname, 'main.html');
+    const options = {
+        url: api_url,
+        form: {
+            query: title,
+            d_titl:title
+        },
+        headers: {'X-Naver-Client-Id':clientId, 'X-Naver-Client-Secret': clientSecret}
+     };
 
-    //const { text: query, targetLanguage } = req.body;
-    // console.log(query);
-    // console.log(targetLanguage);
-
+    request.get(options, function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        //res.writeHead(200, {'Content-Type': 'text/json;charset=utf-8'});
+        const parsedBody = JSON.parse(body);
+        console.log(parsedBody['items'][0]);
+        //res.redirect(`/main?info=${parsedBody['items'][0]}`);
+        res.redirect('main');
+        //res.end(body);
+      } else {
+        res.status(response.statusCode).end();
+        console.log('error = ' + response.statusCode);
+      }
+    });
 });
-
-// // papago 번역 요청 부분. 
-// app.get("/translate", (req, res) => {
-//     const url = 'https://openapi.naver.com/v1/papago/n2mt';
-//     // console.log(req.query, typeof req.query);
-//     const options = {
-//         url,
-//         form: {
-//             source: req.query['lang'], // query string으로 받은 값들 mapping or binding.
-//             target: req.query['targetLanguage'],
-//             text: req.query['query'],
-//         },
-//         headers: {
-//             "X-Naver-Client-Id": clientId,
-//             "X-Naver-Client-Secret": clientSecret,
-//         },
-//     }
-
-//     request.post(options, (error, response, body) => {
-//         if (!error && response.statusCode == 200) {
-//             //   console.log(body, typeof body);
-//             // front에 해당하는 script.js에 응답 데이터 (json) 전송.
-//             res.json(body);
-//         } else {
-//             console.log(`error = ${response.statusCode}`);
-//         }
-//     });
-// });
-
 
 app.listen(3000, () => {
     console.log('http://127.0.0.1:3000/ app listening on port 3000!');
