@@ -104,6 +104,7 @@ a:hover {
 
 .Header__bottom__search__btn input {
   border: none;
+  outline: none;
 }
 
 .Header__bottom__search__btn input::placeholder {
