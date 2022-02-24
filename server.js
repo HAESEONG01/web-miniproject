@@ -35,8 +35,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/search", (req, res) => {
-    const title = req.query.search;
-    console.log(title);
+    let title= ' ';
+    title = req.query.search;
 
     const api_url = 'https://openapi.naver.com/v1/search/book.json?query='+ encodeURI(req.query.search);
 
@@ -61,11 +61,11 @@ app.get("/search", (req, res) => {
         const price = bookInfo['price'];
         const desc = bookInfo['description'];
         const result = template.result(titl, img, author, pub, price, desc);
-        
+
         res.send(result);
       } else {
-        res.status(response.statusCode).end();
         console.log('error = ' + response.statusCode);
+        res.redirect('/');
       }
     });
 });
