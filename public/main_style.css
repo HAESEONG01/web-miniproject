@@ -114,76 +114,77 @@ a:hover {
   border: none;
   background: none;
   color: cadetblue;
+} 
+
+/* Bookinfo */
+.Bookinfo {
+  /* border: 2px slateblue dashed; */
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+
 }
 
-  /* Bestseller */
-  
-  .Bestseller {
-    /* border: 2px slateblue dashed; */
-    display: flex;
-    flex-direction: column;
-    margin: 0 20px;
-  
-  }
-  
-  .Bestseller__header {
-    /* border: 2px darkblue dashed; */
-    display: flex;
-    align-items: center;
-    margin: 0 20px;
-    padding: 10px 0;
-  }
-  
-  .Bestseller__header__main {
-    margin: 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  .Bestseller__header__sub {
-    display: flex;
-    margin-left: 20px;
-  }
-  
-  .Bestseller__header__sub li {
-    margin: 10px;
-    font-size: 1rem;
-  }
-  
-  .Bestseller__body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 20px;
-    /* border: 1px solid #ADB5BD; */
-  }
-  
-  .Bestseller__body__content {
-    display: flex;
-    align-items: center;
-  }
-  
-  .Bestseller__body__content li {
-      border: #ADB5BD 1px solid;
-      width: 205px;
-      height: 320px;
-      margin:10px;
-      align-items: center;
-  }
-  
-  .cover, .category, .title {
-      text-align: center;
-      margin: 3px 0px;
-  }
-  
-  .category {
-      font-size: 12px;
-      font-weight: 300;
-  }
-  
-  .title{
-      font-weight: 600;;
-  }
+.Bookinfo__header {
+  /* border: 2px darkblue dashed; */
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.Bookinfo hr{
+  margin: 0;
+}
+
+.Bookinfo__body {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.Bookinfo__body__thumb {
+  display: flex;
+  margin: 20px;
+}
+
+.Bookinfo__body__inner {
+  margin: 20px;
+  font-size: 1rem;
+}
+
+.Bookinfo__body__inner p {
+  display: inline-block;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.Bookinfo__body__inner em {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.Bookinfo__body__inner span {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.Bookinfo__body__inner a.btn {
+  display: block;
+  overflow: hidden;
+  float: left;
+  background-color: rgb(0,199, 60);
+  border-radius: 0;
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+  padding: 5px 30px;
+  border: 0.5px solid rgb(6, 204, 65);
+}
+
+  /*Footer*/
 
 .Footer{
 
@@ -252,18 +253,20 @@ a:hover {
     padding-top:21px;
 }
 
-
-
 .Footer__area .Shortcut__list{
     float:right;
-    width: 150px;
-    height: 44px;
+    width: 133px;;
+    height:20px;
+    position: relative;
+    right: 0;
+    top: 20px;
+    text-align: left;
 }
 
 .Footer__area .Shortcut__list .btn_open {
     padding-top:15px;
     padding-bottom:13px;
-    border:1px solid #6d6d6d;
+    border:1px solid #707070;
     background:#6d6d6d url('http://image.kyobobook.co.kr/ink/images/common/arr_shortcut2.png') no-repeat right 0;
     color:#fff;
     font-weight:bold;
@@ -271,8 +274,51 @@ a:hover {
     text-align:center;
     text-transform:uppercase;
 
+    
+
+}
+.Shortcut__list ul li.on a,
+.Shortcut__list ul li a:hover,
+.Shortcut__list ul li a:active,
+.Shortcut__list ul li a:focus {
+background-color:#dedede;
+color:#212121;
 }
 
+.shortcut_top ul {
+  top:0;
+  bottom:auto;
+}
+.shortcut_top .btn_open {
+  background-position:right -20px;
+}
+.shortcut_top ul {
+  top:19px;bottom:auto;
+}
+.shortcut_top.shortcut_open .btn_open {
+  background-position:right 0;
+}
+.shortcut_open .btn_open {
+  background-position:right -20px;
+}
+.shortcut_open ul {
+  display:block;
+}
+.shortcut_auto {
+  display:inline-block;width:auto;*display:inline;*zoom:1;
+}
+.shortcut_auto .btn_open {
+  padding-right:20px;
+}
+
+.Footer__area .Shortcut__list ul {
+    bottom:43px;
+}
+
+.Footer__area .Shortcut_open .btn_open {
+    background-position:right -44px;
+}
+ 
 .Footer__area .Promotion__area {
     float:right;
     width:460px;
