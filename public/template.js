@@ -7,15 +7,8 @@ module.exports = {
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
+            <title>Search Book</title>
             <link rel="stylesheet" href="main_style.css">
-        
-            <!-- Bootstrap 설정 코드 -->
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-        
-            <!-- Google web font 설정 코드 -->
-            <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
         
             <!-- Font-awesome 설정 코드 -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
@@ -80,7 +73,7 @@ module.exports = {
                         <hr>
                         <div class="Bookinfo__body">
                             <div class="Bookinfo__body__thumb">
-                                <img src="${img}" alt="book thumb image">
+                                <img src="${img}" alt="book thumb image" width="150px" height="225px">
                             </div>
                             <div class="Bookinfo__body__inner">
                                 <div>
